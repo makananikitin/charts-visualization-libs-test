@@ -1,0 +1,45 @@
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  height: 100%;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 48px;
+    padding: 16px;
+    border-bottom: 1px solid black;
+  }
+
+  &__item {
+    &_active {
+      background-color: green;
+      color: white;
+      padding: 12px;
+    }
+
+    &_inactive {
+      background-color: rgb(165, 42, 42);
+      color: #aaaaaa;
+      padding: 10px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
